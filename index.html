@@ -4,17 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tiêu Quang Khánh</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
     body {
-      background: #fff;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -22,67 +16,68 @@
     }
 
     .card {
-      background: #fff;
-      padding: 20px;
-      border: 2px solid #000;
-      border-radius: 12px;
       text-align: center;
-      max-width: 700px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 500px;
     }
 
     .avatar {
-      width: 160px;
-      height: 160px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 15px;
-      border: 4px solid black;
-    }
-
-    h2 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-
-    p {
-      font-size: 14px;
-      color: #333;
       margin-bottom: 20px;
+      border: 4px solid #000;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .title {
+      color: #555;
+      font-style: italic;
+      margin-bottom: 30px;
     }
 
     .icons {
       display: flex;
       justify-content: center;
-      gap: 25px;
-      font-size: 24px;
+      gap: 30px;
     }
 
-    .icons a {
-      color: #000;
+    .icon-link {
       text-decoration: none;
-      transition: 0.3s;
+      color: black;
+      font-size: 30px;
+      transition: transform 0.2s;
     }
 
-    .icons a:hover {
+    .icon-link:hover {
       transform: scale(1.2);
-      color: #007bff;
+    }
+
+    .icon-link img {
+      width: 32px;
+      height: 32px;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img class="avatar" src="https://i.imgur.com/fXJ7gcX.png" alt="Avatar">
-    <h2>Tiêu Quang Khánh</h2>
-    <p>UY TISN SOOS 1 THEES GIOIWS:))</p>
-
+    <img class="avatar" src="https://i.imgur.com/mYV9FpY.png" alt="Tiêu Quang Khánh">
+    <h1>Tiêu Quang Khánh</h1>
+    <div class="title">UY TISN SOOS 1 THEES GIOIWS :))</div>
     <div class="icons">
-      <a href="https://www.facebook.com/kahntq" target="_blank" title="Facebook">
-        <i class="fab fa-facebook"></i>
+      <a class="icon-link" href="https://www.facebook.com/kahntq" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
       </a>
-      <a href="https://zalo.me/0906024510" target="_blank" title="Zalo">
-        <i class="fas fa-comment-dots"></i>
+      <a class="icon-link" href="https://zalo.me/0906024510" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
       </a>
     </div>
   </div>
