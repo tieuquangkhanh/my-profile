@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Tiêu Quang Khánh</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiêu Quang Khánh - Profile</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding-top: 50px;
+    }
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
+    h1 {
+      margin-top: 15px;
+      font-size: 24px;
+    }
+    .social-links {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .social-links a img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s;
+    }
+    .social-links a img:hover {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
-  <div class="profile">
-    <img src="https://i.imgur.com/kYe9htK.png" alt="Avatar" class="avatar" />
-    <div class="social-icons">
-      <a href="https://www.facebook.com/kahntq" target="_blank"><img src="icon/facebook.svg" alt="Facebook" /></a>
-      <a href="https://www.tiktok.com/@tq_khanh2610" target="_blank"><img src="icon/tiktok.svg" alt="TikTok" /></a>
-      <a href="https://www.instagram.com/wag.kahn_06/" target="_blank"><img src="icon/instagram.svg" alt="Instagram" /></a>
-      <a href="https://locket.camera/links/mnZmNEQNjGobLFyc8" target="_blank"><img src="icon/locket.svg" alt="Locket" /></a>
-      <a href="tel:0906024510"><img src="icon/zalo.svg" alt="Zalo" /></a>
+  <div class="container">
+    <img src="images/avatar.png" alt="Avatar" class="avatar">
+    <h1>Tiêu Quang Khánh</h1>
+    <div class="social-links">
+      <a href="https://www.facebook.com/kahntq" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://www.tiktok.com/@tq_khanh2610" target="_blank"><img src="images/tiktok.png" alt="TikTok"></a>
+      <a href="https://www.instagram.com/wag.kahn_06/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/locket.png" alt="Locket"></a>
+      <a href="#"><img src="images/zalo.png" alt="Zalo"></a>
     </div>
   </div>
-  <canvas id="sakura"></canvas>
-  <script src="sakura.js"></script>
 </body>
 </html>
